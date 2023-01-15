@@ -1,4 +1,5 @@
 {
   "item.hello-fabric.my_item": "My Item",
-  "item.hello-fabric.my_awesome_item": "My Awesome Item"
+  "item.hello-fabric.my_awesome_item": "My Awesome Item",
+  "itemGroup.hello-fabric.test_group": "Test Group"
 }
