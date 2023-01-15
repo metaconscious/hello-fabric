@@ -1,6 +1,10 @@
 {
   "item.hello-fabric.my_item": "My Item",
   "item.hello-fabric.my_awesome_item": "My Awesome Item",
+  "item.hello-fabric.my_awesome_helmet": "My Awesome Helmet",
+  "item.hello-fabric.my_awesome_chestplate": "My Awesome Chestplate",
+  "item.hello-fabric.my_awesome_leggings": "My Awesome Leggings",
+  "item.hello-fabric.my_awesome_boots": "My Awesome Boots",
   "itemGroup.hello-fabric.test_group": "Test Group",
   "item.hello-fabric.my_item.tooltip_1": "This is MY item.",
   "item.hello-fabric.my_item.tooltip_2": "This is NOT your item.",
