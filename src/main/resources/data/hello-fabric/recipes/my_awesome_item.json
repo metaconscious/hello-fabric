@@ -1,0 +1,9 @@
+{
+  "type": "smelting",
+  "ingredient": {
+    "item": "hello-fabric:my_item"
+  },
+  "result": "hello-fabric:my_awesome_item",
+  "experience": 0.15,
+  "cookingtime": 300
+}
