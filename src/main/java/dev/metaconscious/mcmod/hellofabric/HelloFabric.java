@@ -1,6 +1,7 @@
 package dev.metaconscious.mcmod.hellofabric;
 
 import dev.metaconscious.mcmod.hellofabric.items.MyAwesomeItem;
+import dev.metaconscious.mcmod.hellofabric.items.MyItem;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
@@ -18,7 +19,7 @@ import net.minecraft.util.Identifier;
 public class HelloFabric implements ModInitializer {
 
 
-    public static final Item MY_ITEM = new Item(new FabricItemSettings().maxCount(16));
+    public static final Item MY_ITEM = new MyItem(new FabricItemSettings().maxCount(16));
     public static final Item MY_AWESOME_ITEM = new MyAwesomeItem(new FabricItemSettings());
     private static final ItemGroup ITEM_GROUP = FabricItemGroup
             .builder(new Identifier("hello-fabric", "test_group"))
