@@ -3,9 +3,11 @@ package dev.metaconscious.mcmod.hellofabric;
 import dev.metaconscious.mcmod.hellofabric.items.MyAwesomeItem;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -21,5 +23,7 @@ public class HelloFabric implements ModInitializer {
         Registry.register(Registries.ITEM, new Identifier("hello-fabric", "my_awesome_item"), MY_AWESOME_ITEM);
         FuelRegistry.INSTANCE.add(MY_AWESOME_ITEM, 300);
         CompostingChanceRegistry.INSTANCE.add(MY_ITEM, 0.1f);
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(content -> content.add(MY_ITEM));
     }
 }
