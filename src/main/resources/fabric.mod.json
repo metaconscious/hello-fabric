@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "hello-fabric",
+  "version": "${version}",
+  "name": "Hello Fabric",
+  "description": "A fabric mod demo",
+  "authors": [
+    "Marko"
+  ],
+  "contact": {
+    "website": "https://github.com/metaconscious",
+    "repo": "https://github.com/metaconscious/hello-fabric"
+  },
+  "license": "MIT",
+  "icon": "assets/hello-fabric/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "dev.metaconscious.mcmod.hellofabric.client.HelloFabricClient"
+    ],
+    "main": [
+      "dev.metaconscious.mcmod.hellofabric.HelloFabric"
+    ]
+  },
+  "mixins": [
+    "hello-fabric.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.12",
+    "fabric": "*",
+    "minecraft": "1.19.3"
+  }
+}
