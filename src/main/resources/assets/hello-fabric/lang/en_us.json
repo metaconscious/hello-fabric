@@ -5,6 +5,8 @@
   "item.hello-fabric.my_awesome_chestplate": "My Awesome Chestplate",
   "item.hello-fabric.my_awesome_leggings": "My Awesome Leggings",
   "item.hello-fabric.my_awesome_boots": "My Awesome Boots",
+  "item.hello-fabric.my_awesome_shovel": "My Awesome Shovel",
+  "item.hello-fabric.my_awesome_sword": "My Awesome Sword",
   "itemGroup.hello-fabric.test_group": "Test Group",
   "item.hello-fabric.my_item.tooltip_1": "This is MY item.",
   "item.hello-fabric.my_item.tooltip_2": "This is NOT your item.",

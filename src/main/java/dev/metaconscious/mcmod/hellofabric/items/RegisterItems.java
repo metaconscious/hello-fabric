@@ -1,6 +1,7 @@
 package dev.metaconscious.mcmod.hellofabric.items;
 
 import dev.metaconscious.mcmod.hellofabric.armor.MyAwesomeArmorMaterial;
+import dev.metaconscious.mcmod.hellofabric.tools.MyAwesomeToolMaterial;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -20,12 +21,13 @@ public class RegisterItems {
             .builder(new Identifier("hello-fabric", "test_group"))
             .icon(() -> new ItemStack(MY_AWESOME_ITEM))
             .build();
+    public static final Item MY_AWESOME_HELMET = new ArmorItem(MyAwesomeArmorMaterial.INSTANCE, EquipmentSlot.HEAD, new Item.Settings());
+    public static final Item MY_AWESOME_CHESTPLATE = new ArmorItem(MyAwesomeArmorMaterial.INSTANCE, EquipmentSlot.CHEST, new Item.Settings());
+    public static final Item MY_AWESOME_LEGGINGS = new ArmorItem(MyAwesomeArmorMaterial.INSTANCE, EquipmentSlot.LEGS, new Item.Settings());
+    public static final Item MY_AWESOME_BOOTS = new ArmorItem(MyAwesomeArmorMaterial.INSTANCE, EquipmentSlot.FEET, new Item.Settings());
 
-    public static final ArmorMaterial MY_AWESOME_ARMOR_MATERIAL = new MyAwesomeArmorMaterial();
-    public static final Item MY_AWESOME_HELMET = new ArmorItem(MY_AWESOME_ARMOR_MATERIAL, EquipmentSlot.HEAD, new Item.Settings());
-    public static final Item MY_AWESOME_CHESTPLATE = new ArmorItem(MY_AWESOME_ARMOR_MATERIAL, EquipmentSlot.CHEST, new Item.Settings());
-    public static final Item MY_AWESOME_LEGGINGS = new ArmorItem(MY_AWESOME_ARMOR_MATERIAL, EquipmentSlot.LEGS, new Item.Settings());
-    public static final Item MY_AWESOME_BOOTS = new ArmorItem(MY_AWESOME_ARMOR_MATERIAL, EquipmentSlot.FEET, new Item.Settings());
+    public static final Item MY_AWESOME_SHOVEL = new ShovelItem(MyAwesomeToolMaterial.INSTANCE, 1.5f, -3.0f, new Item.Settings());
+    public static final Item MY_AWESOME_SWORD = new SwordItem(MyAwesomeToolMaterial.INSTANCE, 3, -2.4f, new Item.Settings());
 
     public static void register() {
         Registry.register(Registries.ITEM, new Identifier("hello-fabric", "my_item"), MY_ITEM);
@@ -34,6 +36,8 @@ public class RegisterItems {
         Registry.register(Registries.ITEM, new Identifier("hello-fabric", "my_awesome_chestplate"), MY_AWESOME_CHESTPLATE);
         Registry.register(Registries.ITEM, new Identifier("hello-fabric", "my_awesome_leggings"), MY_AWESOME_LEGGINGS);
         Registry.register(Registries.ITEM, new Identifier("hello-fabric", "my_awesome_boots"), MY_AWESOME_BOOTS);
+        Registry.register(Registries.ITEM, new Identifier("hello-fabric", "my_awesome_shovel"), MY_AWESOME_SHOVEL);
+        Registry.register(Registries.ITEM, new Identifier("hello-fabric", "my_awesome_sword"), MY_AWESOME_SWORD);
 
         FuelRegistry.INSTANCE.add(MY_AWESOME_ITEM, 300);
         CompostingChanceRegistry.INSTANCE.add(MY_ITEM, 0.1f);

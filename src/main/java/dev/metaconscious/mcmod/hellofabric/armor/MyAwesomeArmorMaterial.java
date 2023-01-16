@@ -9,6 +9,8 @@ import net.minecraft.sound.SoundEvents;
 
 public class MyAwesomeArmorMaterial implements ArmorMaterial {
 
+    public static final MyAwesomeArmorMaterial INSTANCE = new MyAwesomeArmorMaterial();
+
     private static final int[] BASE_DURABILITY = new int[]{14, 16, 17, 12};
     private static final int[] PROTECTION_VALUES = new int[]{3, 6, 8, 3};
 
