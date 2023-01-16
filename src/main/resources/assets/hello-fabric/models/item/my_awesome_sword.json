@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "hello-fabric:item/my_awesome_sword"
+  }
+}

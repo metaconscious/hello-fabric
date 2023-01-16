@@ -1,6 +1,7 @@
 package dev.metaconscious.mcmod.hellofabric.tools;
 
 import dev.metaconscious.mcmod.hellofabric.items.RegisterItems;
+import net.fabricmc.yarn.constants.MiningLevels;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.item.ToolMaterials;
 import net.minecraft.recipe.Ingredient;
@@ -26,7 +27,7 @@ public class MyAwesomeToolMaterial implements ToolMaterial {
 
     @Override
     public int getMiningLevel() {
-        return ToolMaterials.NETHERITE.getMiningLevel();
+        return MiningLevels.NETHERITE;
     }
 
     @Override
