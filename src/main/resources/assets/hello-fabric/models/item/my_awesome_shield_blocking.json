@@ -1,0 +1,6 @@
+{
+  "parent": "fabricshieldlib:item/fabric_shield_blocking",
+  "textures": {
+    "shield": "hello-fabric:item/my_awesome_shield"
+  }
+}

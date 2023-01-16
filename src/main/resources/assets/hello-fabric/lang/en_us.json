@@ -10,6 +10,7 @@
   "item.hello-fabric.my_awesome_pickaxe": "My Awesome Pickaxe",
   "item.hello-fabric.my_awesome_hoe": "My Awesome Hoe",
   "item.hello-fabric.my_awesome_axe": "My Awesome Axe",
+  "item.hello-fabric.my_awesome_shield": "My Awesome Shield",
   "itemGroup.hello-fabric.test_group": "Test Group",
   "item.hello-fabric.my_item.tooltip_1": "This is MY item.",
   "item.hello-fabric.my_item.tooltip_2": "This is NOT your item.",

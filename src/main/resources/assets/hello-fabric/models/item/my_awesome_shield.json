@@ -1,0 +1,14 @@
+{
+  "parent": "fabricshieldlib:item/fabric_shield",
+  "textures": {
+    "shield": "hello-fabric:item/my_awesome_shield"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "blocking": 1
+      },
+      "model": "hello-fabric:item/my_awesome_shield_blocking"
+    }
+  ]
+}

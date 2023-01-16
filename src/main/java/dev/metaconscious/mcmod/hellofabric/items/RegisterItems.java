@@ -1,5 +1,6 @@
 package dev.metaconscious.mcmod.hellofabric.items;
 
+import com.github.crimsondawn45.fabricshieldlib.lib.object.FabricShieldItem;
 import dev.metaconscious.mcmod.hellofabric.armor.MyAwesomeArmorMaterial;
 import dev.metaconscious.mcmod.hellofabric.tools.MyAwesomeAxe;
 import dev.metaconscious.mcmod.hellofabric.tools.MyAwesomeHoe;
@@ -36,6 +37,8 @@ public class RegisterItems {
     public static final Item MY_AWESOME_HOE = new MyAwesomeHoe(MyAwesomeToolMaterial.INSTANCE, 7, -3.2f, new Item.Settings());
     public static final Item MY_AWESOME_AXE = new MyAwesomeAxe(MyAwesomeToolMaterial.INSTANCE, 7.0f, -3.2f, new Item.Settings());
 
+    public static final Item MY_AWESOME_SHIELD = new FabricShieldItem(new FabricItemSettings().maxDamage(2500), 10, 13, MY_AWESOME_ITEM);
+
     public static void register() {
         Registry.register(Registries.ITEM, new Identifier("hello-fabric", "my_item"), MY_ITEM);
         Registry.register(Registries.ITEM, new Identifier("hello-fabric", "my_awesome_item"), MY_AWESOME_ITEM);
@@ -48,6 +51,7 @@ public class RegisterItems {
         Registry.register(Registries.ITEM, new Identifier("hello-fabric", "my_awesome_pickaxe"), MY_AWESOME_PICKAXE);
         Registry.register(Registries.ITEM, new Identifier("hello-fabric", "my_awesome_hoe"), MY_AWESOME_HOE);
         Registry.register(Registries.ITEM, new Identifier("hello-fabric", "my_awesome_axe"), MY_AWESOME_AXE);
+        Registry.register(Registries.ITEM, new Identifier("hello-fabric", "my_awesome_shield"), MY_AWESOME_SHIELD);
 
         FuelRegistry.INSTANCE.add(MY_AWESOME_ITEM, 300);
         CompostingChanceRegistry.INSTANCE.add(MY_ITEM, 0.1f);
@@ -64,7 +68,8 @@ public class RegisterItems {
                     MY_AWESOME_HOE,
                     MY_AWESOME_PICKAXE,
                     MY_AWESOME_SHOVEL,
-                    MY_AWESOME_SWORD);
+                    MY_AWESOME_SWORD,
+                    MY_AWESOME_SHIELD);
         });
     }
 
